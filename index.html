@@ -1,194 +1,105 @@
-
-
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Agatha Nweze | Cloud & Azure Portfolio</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Agatha Nweze — Azure, Windows Server, Linux and infrastructure portfolio.">
+  <title>Agatha Nweze | Azure & Infrastructure Portfolio</title>
   <style>
-<div class="section">
-  <div class="card">
-    <h2>Open to Opportunities</h2>
-    <p>
-      <p>
-Designed and deployed a custom website using Apache on Ubuntu Linux.
-This project demonstrates web server configuration, Linux administration,
-HTML/CSS deployment, and troubleshooting skills that form the foundation of cloud infrastructure management.
-</p>
-    </p>
-  </div>
-</div>
-</div>  <!-- End of Project Highlights -->
-
-<div class="section">
-  <h2>Professional Summary</h2>
-  <p>
-    <h1>Agatha Nweze</h1>
-<p>
-Building hands-on infrastructure projects and developing practical cloud administration skills through real-world labs.
-</p>
-
-<p>
-Cloud Administrator in Training | Linux • Azure • Networking • GitHub
-</p>
-
-<p>
-</div>
-
-<div class="section">
-  <div class="card">
-    <h2>Open to Opportunities</h2>
-    <p>
-      I am actively building hands-on cloud infrastructure skills and seeking
-      internships, entry-level Cloud Support, Azure Administrator, IT Support,
-      and Cloud Operations opportunities.
-    </p>
-
-    <a href="YOUR_LINKEDIN_URL">Connect on LinkedIn</a>
-  </div>
-</div>
-
-<div class="footer">
-    Built by Agatha Nweze | Cloud & Azure Learning Portfolio
-</div>
-
-</body>
-</html>
-<div class="footer">
-    Built by Agatha Nweze | Cloud & Azure Learning Portfolio
-</div>
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      background: #f4f7fb;
-      color: #222;
-    }
-
-    .hero {
-      background: linear-gradient(135deg, #0f172a, #0078d4);
-      color: white;
-      padding: 70px 20px;
-      text-align: center;
-    }
-
-    .hero h1 {
-      font-size: 42px;
-      margin-bottom: 10px;
-    }
-
-    .hero p {
-      font-size: 20px;
-      max-width: 700px;
-      margin: auto;
-      line-height: 1.6;
-    }
-
-    .section {
-      max-width: 1000px;
-      margin: 40px auto;
-      padding: 0 20px;
-    }
-
-    .cards {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-      gap: 20px;
-    }
-
-    .card {
-      background: white;
-      padding: 25px;
-      border-radius: 16px;
-      box-shadow: 0 8px 20px rgba(0,0,0,0.08);
-    }
-
-    .card h3 {
-      color: #0078d4;
-      margin-top: 0;
-    }
-
-    .badge {
-      display: inline-block;
-      background: #e8f3ff;
-      color: #0078d4;
-      padding: 8px 14px;
-      border-radius: 20px;
-      margin: 6px;
-      font-size: 14px;
-      font-weight: bold;
-    }
-
-    .footer {
-      text-align: center;
-      padding: 30px;
-      background: #0f172a;
-      color: white;
-      margin-top: 50px;
-    }
+    :root{--navy:#0b1220;--blue:#0078d4;--light:#f6f8fb;--text:#172033;--muted:#607086;--white:#fff;--border:#e3e8ef;--shadow:0 12px 35px rgba(11,18,32,.08)}
+    *{box-sizing:border-box;scroll-behavior:smooth}
+    body{margin:0;font-family:Inter,Segoe UI,Arial,sans-serif;background:var(--light);color:var(--text);line-height:1.65}
+    a{color:inherit;text-decoration:none}
+    nav{position:sticky;top:0;z-index:20;background:rgba(11,18,32,.96);backdrop-filter:blur(8px);border-bottom:1px solid rgba(255,255,255,.08)}
+    .nav-inner{max-width:1120px;margin:auto;padding:16px 24px;display:flex;align-items:center;justify-content:space-between}
+    .brand{font-weight:800;color:white;letter-spacing:.2px}.brand span{color:#55b7ff}
+    .nav-links{display:flex;gap:25px;color:#dbe7f5;font-size:14px}.nav-links a:hover{color:#55b7ff}
+    .hero{background:radial-gradient(circle at 80% 20%,rgba(0,120,212,.35),transparent 32%),linear-gradient(135deg,#0b1220 0%,#12243d 100%);color:white;padding:105px 24px 95px}
+    .hero-inner{max-width:1120px;margin:auto}.eyebrow{color:#66c2ff;font-weight:700;text-transform:uppercase;letter-spacing:2px;font-size:13px;margin-bottom:15px}
+    h1{font-size:clamp(42px,7vw,72px);line-height:1.05;margin:0 0 22px;letter-spacing:-2px}.hero h1 span{color:#55b7ff}
+    .hero p{max-width:720px;color:#d6e2f0;font-size:20px;margin:0 0 30px}.buttons{display:flex;gap:14px;flex-wrap:wrap}
+    .btn{display:inline-block;padding:12px 20px;border-radius:8px;font-weight:700;border:1px solid #55b7ff}.btn-primary{background:#0078d4;color:white;border-color:#0078d4}.btn-secondary{color:white}
+    .section{max-width:1120px;margin:0 auto;padding:78px 24px}.section h2{font-size:34px;margin:0 0 12px;letter-spacing:-.7px}.section-intro{color:var(--muted);max-width:720px;margin:0 0 35px}
+    .about{display:grid;grid-template-columns:1.15fr .85fr;gap:50px;align-items:start}.about p{color:#536277}
+    .stats{display:grid;grid-template-columns:repeat(2,1fr);gap:15px}.stat{background:white;border:1px solid var(--border);padding:24px;border-radius:12px;box-shadow:var(--shadow)}.stat strong{display:block;font-size:27px;color:var(--blue)}.stat small{color:var(--muted)}
+    .skills{display:flex;flex-wrap:wrap;gap:10px}.skill{background:white;border:1px solid var(--border);padding:9px 14px;border-radius:999px;font-weight:600;font-size:14px}
+    .projects{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}.project{background:white;border:1px solid var(--border);border-radius:14px;padding:25px;display:flex;flex-direction:column;min-height:245px;box-shadow:var(--shadow)}.project h3{margin:0 0 9px;font-size:20px}.project p{color:var(--muted);font-size:14px;margin:0 0 18px}.project-tags{margin-top:auto;display:flex;flex-wrap:wrap;gap:7px}.tag{font-size:12px;background:#eef7ff;color:#0068b7;padding:5px 9px;border-radius:5px;font-weight:700}.project-link{margin-top:18px;color:var(--blue);font-weight:700;font-size:14px}
+    .contact{background:#0b1220;color:white}.contact .section-intro{color:#b8c7d9}.contact-card{background:#12243d;border:1px solid #28415f;border-radius:16px;padding:35px;display:flex;align-items:center;justify-content:space-between;gap:30px}.contact-card h2{margin:0 0 8px}.contact-card p{color:#c7d6e6;margin:0}
+    footer{text-align:center;padding:28px 24px;background:#070d17;color:#9eafc3;font-size:13px}
+    @media(max-width:850px){.about{grid-template-columns:1fr}.projects{grid-template-columns:1fr 1fr}.nav-links{display:none}}
+    @media(max-width:560px){.hero{padding:75px 20px}.section{padding:60px 20px}.projects{grid-template-columns:1fr}.contact-card{flex-direction:column;align-items:flex-start}.stats{grid-template-columns:1fr 1fr}h1{letter-spacing:-1px}}
   </style>
 </head>
-
 <body>
-
-  <div class="hero">
-    <h1>Agatha Nweze</h1>
-    <p>
-      Cloud & Azure Learner building hands-on projects with Linux, Apache,
-      Git, GitHub, Networking, and Azure Administration.
-    </p>
-  </div>
-
-  <div class="section">
-    <h2>About This Project</h2>
-    <p>
-      This project demonstrates my ability to configure an Apache web server
-      on Ubuntu, create and serve a custom HTML page, and practice real cloud
-      infrastructure skills that are useful for Azure support and administration roles.
-    </p>
-  </div>
-
-  <div class="section">
-    <h2>Skills Demonstrated</h2>
-    <div>
-      <span class="badge">Linux</span>
-      <span class="badge">Apache</span>
-      <span class="badge">Ubuntu</span>
-      <span class="badge">HTML</span>
-      <span class="badge">CSS</span>
-      <span class="badge">Git</span>
-      <span class="badge">GitHub</span>
-      <span class="badge">Azure Administration</span>
-      <span class="badge">Cloud Infrastructure</span>
-    </div>
-  </div>
-
-  <div class="section">
-    <h2>Project Highlights</h2>
-    <div class="cards">
-      <div class="card">
-        <h3>Server Setup</h3>
-        <p>Installed and configured Apache on Ubuntu to serve a custom web page locally.</p>
-      </div>
-
-      <div class="card">
-        <h3>Linux Practice</h3>
-        <p>Used terminal commands to create folders, manage files, and verify services.</p>
-      </div>
-
-      <div class="card">
-        <h3>Web Hosting Basics</h3>
-        <p>Served an HTML website through Apache and tested it using localhost.</p>
-      </div>
-
-      <div class="card">
-        <h3>Cloud Readiness</h3>
-        <p>Practiced skills that can be repeated on an Azure Linux Virtual Machine.</p>
+  <nav>
+    <div class="nav-inner">
+      <a class="brand" href="#top">Agatha <span>Nweze</span></a>
+      <div class="nav-links">
+        <a href="#about">About</a><a href="#skills">Skills</a><a href="#projects">Projects</a><a href="#contact">Contact</a>
       </div>
     </div>
-  </div>
+  </nav>
 
-  <div class="footer">
-    Built by Agatha Nweze | Cloud & Azure Learning Portfolio
-  </div>
+  <header class="hero" id="top">
+    <div class="hero-inner">
+      <div class="eyebrow">Azure • Windows • Linux • Infrastructure</div>
+      <h1>Building practical <span>cloud infrastructure.</span></h1>
+      <p>I'm Agatha Nweze, an aspiring Azure Platform Engineer focused on Azure administration, Windows Server, Linux, networking, security and real-world infrastructure projects.</p>
+      <div class="buttons">
+        <a class="btn btn-primary" href="#projects">View My Projects</a>
+        <a class="btn btn-secondary" href="https://www.linkedin.com/in/agatha-nweze" target="_blank" rel="noopener">LinkedIn</a>
+      </div>
+    </div>
+  </header>
 
+  <main>
+    <section class="section" id="about">
+      <div class="about">
+        <div>
+          <h2>About Me</h2>
+          <p>I build hands-on labs that mirror real infrastructure and support work. My projects cover Azure networking, secure access, Windows Server administration, Active Directory, Linux administration, VPNs, Azure Virtual Desktop and cloud security.</p>
+          <p>My goal is to turn practical lab experience into production-ready skills for Azure Administrator, Cloud Support, Infrastructure and Windows Administration roles.</p>
+        </div>
+        <div class="stats">
+          <div class="stat"><strong>Azure</strong><small>Cloud administration & networking</small></div>
+          <div class="stat"><strong>Windows</strong><small>Server, AD, DNS & GPO</small></div>
+          <div class="stat"><strong>Linux</strong><small>Administration & automation</small></div>
+          <div class="stat"><strong>GitHub</strong><small>Documented hands-on projects</small></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="skills">
+      <h2>Technical Skills</h2>
+      <p class="section-intro">Technologies and administration areas I am actively developing through hands-on projects.</p>
+      <div class="skills">
+        <span class="skill">Microsoft Azure</span><span class="skill">Azure Administration</span><span class="skill">Azure Networking</span><span class="skill">Azure Security</span><span class="skill">RBAC</span><span class="skill">Windows Server</span><span class="skill">Active Directory</span><span class="skill">DNS</span><span class="skill">Group Policy</span><span class="skill">PowerShell</span><span class="skill">Linux</span><span class="skill">Networking</span><span class="skill">VPN</span><span class="skill">Azure Virtual Desktop</span><span class="skill">Git & GitHub</span><span class="skill">IT Support</span>
+      </div>
+    </section>
+
+    <section class="section" id="projects">
+      <h2>Featured Projects</h2>
+      <p class="section-intro">Selected infrastructure labs demonstrating practical administration, troubleshooting and cloud skills.</p>
+      <div class="projects">
+        <article class="project"><h3>Azure Security & IAM</h3><p>ByteBloom security lab focused on Microsoft Entra ID, identity, RBAC and secure cloud access.</p><div class="project-tags"><span class="tag">Azure</span><span class="tag">Entra ID</span><span class="tag">RBAC</span></div><a class="project-link" href="https://github.com/Acnweze/azure-bytebloom-security-iam" target="_blank" rel="noopener">View project →</a></article>
+        <article class="project"><h3>Azure Virtual Desktop</h3><p>Designed a pooled AVD proof of concept with Entra ID join, Intune considerations, Start VM on Connect and cost controls.</p><div class="project-tags"><span class="tag">Azure</span><span class="tag">AVD</span><span class="tag">Identity</span></div><a class="project-link" href="https://github.com/Acnweze/snapglow-azure-virtual-desktop-lab" target="_blank" rel="noopener">View project →</a></article>
+        <article class="project"><h3>Windows Server SSTP VPN</h3><p>Configured RRAS and SSTP remote access, including certificate troubleshooting, VPN users and address pool configuration.</p><div class="project-tags"><span class="tag">Windows Server</span><span class="tag">RRAS</span><span class="tag">VPN</span></div><a class="project-link" href="https://github.com/Acnweze/ecofusion-windows-server-sstp-vpn" target="_blank" rel="noopener">View project →</a></article>
+        <article class="project"><h3>FTP Firewall Troubleshooting</h3><p>Investigated blocked FTP traffic, reviewed Windows Firewall behavior and restored connectivity to an IIS FTP service.</p><div class="project-tags"><span class="tag">IIS</span><span class="tag">FTP</span><span class="tag">Firewall</span></div><a class="project-link" href="https://github.com/Acnweze/windows-server-ftp-firewall-troubleshooting" target="_blank" rel="noopener">View project →</a></article>
+        <article class="project"><h3>Azure Multi-Region Network</h3><p>Hands-on Azure networking project covering multi-region infrastructure and cloud network design.</p><div class="project-tags"><span class="tag">Azure</span><span class="tag">Networking</span><span class="tag">Infrastructure</span></div><a class="project-link" href="https://github.com/Acnweze/azure-multi-region-network" target="_blank" rel="noopener">View project →</a></article>
+        <article class="project"><h3>Linux Server Health Monitor</h3><p>Built a practical Linux monitoring project for checking server health and system resources.</p><div class="project-tags"><span class="tag">Linux</span><span class="tag">Bash</span><span class="tag">Monitoring</span></div><a class="project-link" href="https://github.com/Acnweze/linux-server-health-monitor" target="_blank" rel="noopener">View project →</a></article>
+      </div>
+    </section>
+
+    <section class="contact" id="contact">
+      <div class="section">
+        <div class="contact-card">
+          <div><h2>Let's Connect</h2><p>I'm open to remote Azure, Cloud Support, Infrastructure and IT opportunities.</p></div>
+          <a class="btn btn-primary" href="https://www.linkedin.com/in/agatha-nweze" target="_blank" rel="noopener">Connect on LinkedIn</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>© 2026 Agatha Nweze · Azure & Infrastructure Portfolio</footer>
 </body>
 </html>
